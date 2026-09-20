@@ -1,27 +1,23 @@
-import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import About from "./pages/About";
 
-function App() { useEffect(() => {
-  alert("Welcome to SkillSwap! Explore skills and start learning.");
-}, []);
-
+function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
 
-      <h1>Welcome to SkillSwap</h1>
-      <p>Learn and share your skills.</p>
-
-      <SkillCard skill="Python" />
-      <SkillCard skill="Web Development" />
-      <SkillCard skill="Graphic Design" />
-
-      <button>Get Started</button>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
 
       <Footer text="© 2026 SkillSwap" />
-    </div>
+    </BrowserRouter>
   );
 }
 

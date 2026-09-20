@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import SkillCard from "./components/SkillCard";
 import Footer from "./components/Footer";
 
-function App() {
+function App() { useEffect(() => {
+  alert("Welcome to SkillSwap! Explore skills and start learning.");
+}, []);
+
   return (
     <div>
       <Navbar />

@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 function SkillCard(props) {
   const [interested, setInterested] = useState(false);
   const [count, setCount] = useState(0);
+  
+  useEffect(() => {
+  console.log(props.skill + " interest updated");
+  }, [interested]);
+
 
   function handleInterest() {
     if (interested) {

@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f8f9fc;
+  color: #222;
 }
 
 nav {
@@ -8,13 +10,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 
 div {
@@ -23,6 +26,35 @@ div {
 
 h1 {
   margin-top: 40px;
+}
+
+.skill-card {
+  display: inline-block;
+  width: 220px;
+  margin: 15px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  vertical-align: top;
+}
+
+.skill-card h3 {
+  margin-top: 0;
+}
+
+.skill-card button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7f2a45;
+  color: white;
+  cursor: pointer;
+}
+
+.skill-card button:hover {
+  opacity: 0.85;
 }
 
 button {
@@ -34,5 +66,6 @@ button {
 footer {
   margin-top: 40px;
   padding: 15px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
 }
